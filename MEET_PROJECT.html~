@@ -3,9 +3,34 @@
 <title>MEE!</title>
 	</head>
 	<body>
-<p >cs is fun<br>with sadek</p>
-<h6> ghhhh</h6>
+<style>
+.red {color : red ;}
+h1, h2, h3, h4, h5, h6 {color : blue ;}
+</style>
+<p class = "red" >cs is fun<br>with sadek</p>
+<h1> ghhhh</h6>
 	</body>
 <img src="https://upload.wikimedia.org/wikipedia/en/9/99/MarioSMBW.png"/>
  <a href="http://www.google.com/">Visit our google Website</a> 
+ <ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+ <ol type="1">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+</ul> 
+<form>
+<p class = "red">
+your email
+</p>
+<input type = "email">
+<p>
+your password
+</p>
+<input type = "password">
+<input type = "submit" value = "submit">
+</form>
 </html>
