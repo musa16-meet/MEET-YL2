@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='main_page.css') }}">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 		<link rel="icon" href="{{ url_for('static', filename='me_logo.png') }}" type="image/gif">
 		<title>
 			Contact Me
@@ -30,5 +30,28 @@
 			<form action = "{{ url_for('contact_page')}}">
 			<input type = "submit" value = "Contact Me" id = "contact">
 			</form>
+			<div id= "contactMe">
+				<p>
+					You can contact me via this website by intering your name and email adress, then type in your msg which you are willing to send, any rude and/or mean messeges I receive, the user who sent it will be banned .
+				</p>
+			</div>
+			<span id = "intername">
+			please inter your name :
+			</span>
+			<input type = "Name" value "name" id = "namebox" >
+			<span id = "interemail">
+			please inter your email :
+			</span>
+			<input type = "email" value "email" id = "emailbox">
+			<span id = "intermsg">
+			please write your message here :
+			</span>
+			<TEXTAREA Name="content" ROWS=6 COLS=40 id = "msgbox">
+			</TEXTAREA>
+			<form method = 'post' action = "{{ url_for('main_page')}}">
+			<input type = "submit" value = "Send" id = "sent">
+			</form>
+
+
 	</body>
 </html>

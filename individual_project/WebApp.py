@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 
 #SQLAlchemy stuff
-from database import Base, contact
+from database import Base, Contact
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 engine = create_engine('sqlite:///Webpage.db')
@@ -29,9 +29,18 @@ def hobbies_page():
 def education_page():
 	return render_template('education_page.html')
 
-@app.route('/contact')
+@app.route('/contact', methods = ['GET' , 'POST'])
 def contact_page():
-	return render_template('contact_page.html')
+	if request.method ==  'GET':
+		return render_template('contact_page.html')
+	else:
+		sir_name = request.form ['name']
+		sir_email = request.form['email']
+		sir_msg = request.form['message']
+		message = Contact(name = sir_name, email = sir_email, msg = sir_msg)
+		session.add(message)
+		session.commit()
+
 
 
 if __name__ == '__main__':
