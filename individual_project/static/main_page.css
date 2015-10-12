@@ -1,0 +1,88 @@
+#header{
+
+	float: left;
+}
+
+
+#liner{
+	float: right;
+    width: 1550px;
+    color: #bdbdbd;
+    font-size:100px;
+    font-style: italic;
+
+}
+
+
+body{
+	background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+#bio{
+	float: left;
+	font-style: center;
+	color:#c04d4d;
+	background-color:transparent;
+	font-size:45;
+	border-top: 50px;
+	border-left: 50px;
+	border-right: 50px;
+	height:75px;
+	width:100px;
+
+}
+
+#hobbies{
+	float: left;
+	color:#c04d4d;
+	background-color:transparent;
+	font-size:45;
+	border-top: 50px;
+	border-left: 50px;
+	border-right: 50px;
+	height:75px;
+	width:200px;
+
+}
+
+#education{
+	float: left;
+	color:#c04d4d;
+	background-color:transparent;
+	font-size:45;
+	border-top: 50px;
+	border-left: 50px;
+	border-right: 50px;
+	height:75px;
+	width:250px;
+
+}
+
+#contact{
+	float: left;
+	color:#c04d4d;
+	background-color:transparent;
+	font-size:45px;
+	border-top: 50px;
+	border-left: 50px;
+	border-right: 50px;
+	height:75px;
+	width:270px;
+
+}
+
+#intro{
+	position: absolute;
+    left: 25px;
+    top: 250px;
+	color: #bdbdbd;
+	font-size:50px;
+	text-align: left;
+	text-indent: 30px;
+	position: absolute;
+}

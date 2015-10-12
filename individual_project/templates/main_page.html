@@ -1,11 +1,44 @@
 <html>
 	<head>
-		<link rel="icon" href="/home/master/Desktop/MEET-YL2/individual_project/static/me_logo.png" type="image/gif">
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='main_page.css') }}">
+		<link rel="icon" href="{{ url_for('static', filename='me_logo.png') }}" type="image/gif">
 		<title>
 			Home
 		</title>
 	</head>
 	<body>
+		<div id="header">
+		<a href = "{{ url_for('main_page')}}">
+		<img class= "logo" src = "{{ url_for('static', filename='me_logo.png') }}" alt="the websit's logo" height="225" width="225"> </a>
+	  </div>
+		<span id="liner">
+			"Me, MySelf And I" 
+		</span>
 
+			<form action = "{{ url_for('bio_page')}}">
+			<input type = "submit" value = "Bio" id = "bio" >
+			</form>
+		
+			<form action = "{{ url_for('hobbies_page')}}">
+			<input type = "submit" value = "Hobbies" id = "hobbies" >
+			</form>
+		 	
+			<form action = "{{ url_for('education_page')}}">
+			<input type = "submit" value = "Education" id = "education" >
+			</form>
+
+			<form action = "{{ url_for('contact_page')}}">
+			<input type = "submit" value = "Contact Me" id = "contact">
+			</form>
+
+			<span id = "intro">
+			<p>
+				Hi and welcome to ME! website,<br>
+				this website is all about me,<br> so if you are interested in me,<br> this website will help. </p>
+				<p>Here you will find information about me in general,<br> about my hobbies and my educational life,<br>
+				Also feel free to contact me if you are pleased to do so,<br>thank you for visting my website, enjoy.</p>
+
+			
+		</span>
 	</body>
 </html>

@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 Base = declarative_base()
 
 #TABLE INFORMATION ARE PLACED HERE.
-class contact (base):
+class contact (Base):
 	__tablename__ = 'contact'
 	id = Column(Integer, primary_key=True)
 	name = Column(String(60))
