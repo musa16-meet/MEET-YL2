@@ -76,25 +76,7 @@ body{
 
 }
 
-#intro{
-	position: absolute;
-    left: 25px;
-    top: 250px;
-	color: #bdbdbd;
-	font-size:50px;
-	text-align: left;
-	text-indent: 30px;
-}
 
-#contactMe{
-	position: absolute;
-    left: 25px;
-    top: 250px;
-	color: #bdbdbd;
-	font-size:50px;
-	text-align: left;
-	text-indent: 30px;
-}
 
 #namebox{
 	position: absolute;
@@ -161,5 +143,20 @@ body{
 	font-size:45px;
 	height:75px;
 	width:150px;
+
+}
+
+.intro{
+	position: absolute;
+    left: 25px;
+    top: 250px;
+	color: #bdbdbd;
+	font-size:50px;
+	text-align: left;
+	text-indent: 30px;
+}
+
+#socialbuttons{
+	float: right;
 
 }

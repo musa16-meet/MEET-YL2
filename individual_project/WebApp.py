@@ -35,15 +35,17 @@ def contact_page():
 
 @app.route('/sent', methods = ['GET' , 'POST'])
 def sent_page():
-#	if request.method ==  'POST':
-#		sir_name = request.form['name']
-#		sir_email = request.form['email']
-#		sir_message = request.form['message']
-#		contact = Contact(name = sir_name, email = sir_email, message = sir_message)
-#		session.add(contact)
-#		session.commit()
-#	else:
-	return render_template('/sent_page.html')
+	if request.method ==  'POST':
+		sir_name = request.form['name']
+		sir_email = request.form['email']
+		sir_message = request.form['message']
+		contact = Contact(name = sir_name, email = sir_email, message = sir_message)
+		session.add(contact)
+		session.commit()
+		return redirect(url_for('sent_page'))
+
+	else:
+		return render_template('/contact_page.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
