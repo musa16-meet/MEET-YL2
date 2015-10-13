@@ -11,4 +11,4 @@ class Contact (Base):
 	id = Column(Integer, primary_key=True)
 	name = Column(String(60))
 	email = Column(String(60))
-	messege = Column(String(120))
+	message = Column(String(140))

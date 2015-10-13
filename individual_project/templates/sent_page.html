@@ -3,7 +3,7 @@
 		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 		<link rel="icon" href="{{ url_for('static', filename='me_logo.png') }}" type="image/gif">
 		<title>
-			Contact Me
+			Sent
 		</title>
 	</head>
 	<body>
@@ -30,28 +30,13 @@
 			<form action = "{{ url_for('contact_page')}}">
 			<input type = "submit" value = "Contact Me" id = "contact">
 			</form>
-			<div id= "contactMe">
-				<p>
-					You can contact me via this website by intering your name and email adress, then type in your msg which you are willing to send, any rude and/or mean messeges I receive, the user who sent it will be banned .
-				</p>
-			</div>
-			<form method = 'POST' action = "{{ url_for('sent_page')}}" >
-			<input type = "submit" value = "Send" id = "sent">
-			<span id = "intername">
-			please inter your name :
-			</span>
-			<input type = "Name" value "name" id = "namebox" placeholder = "First and Last" >
-			<span id = "interemail">
-			please inter your email :
-			</span>
-			<input type = "email" value "email" id = "emailbox" placeholder = "youremail@example.com" >
-			<span id = "intermsg">
-			please write your message here :
-			</span>
-			<TEXTAREA Name="content" ROWS=6 COLS=40 id = "msgbox">
-			</TEXTAREA>
-			</form>
 
+			<span id = "intro">
+			<p>
+				The message has been sent,<br>
+				
 
+			
+		</span>
 	</body>
 </html>
