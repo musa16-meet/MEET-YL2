@@ -1,10 +1,62 @@
 <html>
 	<head>
+		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+		<link rel="icon" href="{{ url_for('static', filename='me_logo.png') }}" type="image/gif">
 		<title>
 			Contact Me
 		</title>
 	</head>
 	<body>
+		<div id="header">
+		<a href = "{{ url_for('main_page')}}">
+		<img class= "logo" src = "{{ url_for('static', filename='me_logo.png') }}" alt="the websit's logo" height="225" width="225"> </a>
+	  </div>
+		<span id="liner">
+			"Me, MySelf And I" 
+		</span>
 
+			<form action = "{{ url_for('bio_page')}}">
+			<input type = "submit" value = "Bio" id = "bio" >
+			</form>
+		
+			<form action = "{{ url_for('hobbies_page')}}">
+			<input type = "submit" value = "Hobbies" id = "hobbies" >
+			</form>
+		 	
+			<form action = "{{ url_for('education_page')}}">
+			<input type = "submit" value = "Education" id = "education" >
+			</form>
+
+			<form action = "{{ url_for('contact_page')}}">
+			<input type = "submit" value = "Contact Me" id = "contact">
+			</form>
+			<div class= "intro">
+				<p>
+					You can contact me via this website by intering your name and email adress, then type in your msg which you are willing to send, any rude and/or mean messeges I receive, the user who sent it will be banned .
+				</p>
+			</div>
+			<form method = 'POST' action = "{{ url_for('sent_page')}}" >
+			<input type = "submit" value = "Send" id = "sent">
+			<span id = "intername">
+			please inter your name :
+			</span>
+			<input type = "Name" value "name" id = "namebox" placeholder = "First and Last" >
+			<span id = "interemail">
+			please inter your email :
+			</span>
+			<input type = "email" value "email" id = "emailbox" placeholder = "youremail@example.com" >
+			<span id = "intermsg">
+			please write your message here :
+			</span>
+			<TEXTAREA Name="content" ROWS=6 COLS=40 id = "msgbox" placeholder = "Enter Your Message Here">
+			</TEXTAREA>
+			</form>
+
+
+		<div id = "socialbuttons">
+			 <a href="http://www.facebook.com/Musamusa99"><img title="Facebook" src="https://tw0corners.files.wordpress.com/2015/02/facebook-icon-transparent-background.png" alt="Facebook" width="50" height="50" /></a>
+			 <a href="mailto:musahawa3@gmail.com"><img title="Email" src="https://cdn2.iconfinder.com/data/icons/ios-7-style-metro-ui-icons/512/MetroUI_Mail.png" alt="Email" width="50" height="50" /></a>
+			 <a href="https://instagram.com/musahawa_99"><img title="Instagram" src="http://tazindaniels.com/wp-content/uploads/2014/10/instagram-transparent.png" alt="InstaGram" width="50" height="50" /></a>
+		</div>
 	</body>
 </html>

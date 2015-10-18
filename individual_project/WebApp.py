@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask import session as web_session
 app = Flask(__name__)
 
-
 #SQLAlchemy stuff
 from database import Base, Contact
 from sqlalchemy import create_engine
@@ -49,3 +48,4 @@ def sent_page():
 
 if __name__ == '__main__':
     app.run(debug=True)
+    request.data
