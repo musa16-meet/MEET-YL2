@@ -15,7 +15,7 @@
 
 
 body{
-	background-image: url("background.jpg");
+    background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: absolute;
@@ -80,9 +80,9 @@ body{
 
 #namebox{
 	position: absolute;
-    left: 75px;
-    top: 600px;
-    color:#c04d4d;
+   	 left: 75px;
+    	top: 600px;
+    	color:#c04d4d;
 	font-size:35px;
 	height:50px;
 	width:300px;
@@ -90,9 +90,9 @@ body{
 
 #emailbox{
 	position: absolute;
-    left: 75px;
-    top: 750px;
-    color:#c04d4d;
+   	 left: 75px;
+    	top: 750px;
+   	 color:#c04d4d;
 	font-size:25px;
 	height:50px;
 	width:300px;
@@ -100,16 +100,16 @@ body{
 
 #msgbox{
 	position: absolute;
-    left: 450px;
-    top: 600px;
-    color:#c04d4d;
+    	left: 450px;
+   	 top: 600px;
+   	 color:#c04d4d;
 	font-size:25px;
 }
 
 #entername{
 	position: absolute;
-    left: 75px;
-    top: 550px;
+   	left: 75px;
+    	top: 550px;
 	color: #bdbdbd;
 	font-size:28px;
 	text-align: left;
@@ -118,17 +118,17 @@ body{
 
 #enteremail{
 	position: absolute;
-    left: 75px;
-    top: 700px;
+    	left: 75px;
+   	 top: 700px;
 	color: #bdbdbd;
 	font-size:28px;
 	text-align: left;
 }
 
-#intermsg{
+#entermsg{
 	position: absolute;
-    left: 450px;
-    top: 550px;
+    	left: 450px;
+    	top: 550px;
 	color: #bdbdbd;
 	font-size:28px;
 	text-align: left;
@@ -136,8 +136,8 @@ body{
 
 #sent{
 	position: absolute;
-    left: 1100px;
-    top: 725px;
+   	 left: 1100px;
+    	top: 725px;
 	color:#c04d4d;
 	background-color:transparent;
 	font-size:45px;
@@ -148,8 +148,8 @@ body{
 
 .intro{
 	position: absolute;
-    left: 25px;
-    top: 250px;
+    	left: 25px;
+   	 top: 250px;
 	color: #bdbdbd;
 	font-size:50px;
 	text-align: left;

@@ -2,6 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for
 from flask import session as web_session
 app = Flask(__name__)
 
+
 #SQLAlchemy stuff
 from database import Base, Contact
 from sqlalchemy import create_engine
@@ -30,22 +31,14 @@ def education_page():
 
 @app.route('/contact')
 def contact_page():
-	return render_template('/contact_page.html')
+    sir_name = request.form['name']
+    sir_email = request.form['email']
+    sir_message = request.form['message']
+    msg = Contact(name = sir_name, email = sir_email, message = sir_message)
+    session.add(msg)
+    session.commit()
+    return redirect(url_for('contact_page')
 
-@app.route('/sent', methods = ['GET' , 'POST'])
-def sent_page():
-	if request.method ==  'POST':
-		sir_name = request.form['name']
-		sir_email = request.form['email']
-		sir_message = request.form['message']
-		contact = Contact(name = sir_name, email = sir_email, message = sir_message)
-		session.add(contact)
-		session.commit()
-		return redirect(url_for('sent_page'))
-
-	else:
-		return render_template('/contact_page.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
-    request.data

@@ -1,0 +1,40 @@
+#bio{
+	text-decoration: none;
+    color:#c04d4d;
+	float: left;
+	font-style: center;
+	font-size:45;
+	height:75px;
+	width:100px;
+
+}
+
+#hobbies{
+	text-decoration: none;
+    color:#c04d4d;
+	float: left;
+	font-size:45;
+	height:75px;
+	width:200px;
+
+}
+
+#education{
+	text-decoration: none;
+    color:#c04d4d;
+	float: left;
+	font-size:45;
+	height:75px;
+	width:250px;
+
+}
+
+#contact{
+	text-decoration: none;
+    color:#c04d4d;
+	float: left;
+	font-size:45;
+	height:75px;
+	width:270px;
+
+}

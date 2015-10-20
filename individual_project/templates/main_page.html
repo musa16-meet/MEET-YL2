@@ -2,6 +2,7 @@
 	<head>
 		<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
 		<link rel="icon" href="{{ url_for('static', filename='me_logo.png') }}" type="image/gif">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
 			Home
 		</title>
@@ -10,36 +11,24 @@
 		<div id="header">
 		<a href = "{{ url_for('main_page')}}">
 		<img class= "logo" src = "{{ url_for('static', filename='me_logo.png') }}" alt="the websit's logo" height="225" width="225"> </a>
-	  </div>
-		<span id="liner">
+	    </div>
+		<div id="liner">
 			"Me, MySelf And I" 
-		</span>
+		</div>
+		<ul>
+			<li><a href="{{ url_for('bio_page')}}">About Me</a></li>
+			<li><a href="{{ url_for('hobbies_page')}}" id = "hobbies">Hobbies</a></li>
+			<li><a href="{{ url_for('education_page')}}" id = "education">Education</a></li> 
+			<li><a href="{{ url_for('contact_page')}}" id = "contact">Contact Me</a></li>
+		</ul>
 
-			<form action = "{{ url_for('bio_page')}}">
-			<input type = "submit" value = "Bio" id = "bio" >
-			</form>
-		
-			<form action = "{{ url_for('hobbies_page')}}">
-			<input type = "submit" value = "Hobbies" id = "hobbies" >
-			</form>
-		 	
-			<form action = "{{ url_for('education_page')}}">
-			<input type = "submit" value = "Education" id = "education" >
-			</form>
-
-			<form action = "{{ url_for('contact_page')}}">
-			<input type = "submit" value = "Contact Me" id = "contact">
-			</form>
-
-			<span class = "intro">
+			<div class = "intro">
 			<p>
 				Hi and welcome to ME! website,<br>
 				this website is all about me,<br> so if you are interested in me,<br> this website will help. </p>
 				<p>Here you will find information about me in general,<br> about my hobbies and my educational life,<br>
 				Also feel free to contact me if you are pleased to do so,<br>thank you for visting my website, enjoy.</p>
-
-			
-		</span>
+		    </div>
 		<div id = "socialbuttons">
 			 <a href="http://www.facebook.com/Musamusa99"><img title="Facebook" src="https://tw0corners.files.wordpress.com/2015/02/facebook-icon-transparent-background.png" alt="Facebook" width="50" height="50" /></a>
 			 <a href="mailto:musahawa3@gmail.com"><img title="Email" src="https://cdn2.iconfinder.com/data/icons/ios-7-style-metro-ui-icons/512/MetroUI_Mail.png" alt="Email" width="50" height="50" /></a>
