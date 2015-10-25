@@ -29,16 +29,21 @@ def hobbies_page():
 def education_page():
 	return render_template('education_page.html')
 
-@app.route('/contact')
+@app.route('/sent')
+def send_page():
+    return render_template('sent_page.html')
+
+@app.route('/contact', methods = ['GET', 'POST'])
 def contact_page():
-    sir_name = request.form['name']
-    sir_email = request.form['email']
-    sir_message = request.form['message']
-    msg = Contact(name = sir_name, email = sir_email, message = sir_message)
-    session.add(msg)
-    session.commit()
-    return redirect(url_for('contact_page')
+    if request.method == 'POST':
+        sir_name = request.form['name']
+        sir_email = request.form['email']
+        sir_message = request.form['message']
+        msg = Contact(name = sir_name, email = sir_email, message = sir_message)
+        session.add(msg)
+        session.commit()
+        return redirect(url_for('contact_page'))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
