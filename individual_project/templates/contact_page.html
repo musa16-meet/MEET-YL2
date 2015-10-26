@@ -27,19 +27,19 @@
 					You can contact me via this website by intering your name and email adress, then type in your msg which you are willing to send, any rude and/or mean messeges I receive, the user who sent it will be banned .
 				</p>
 			</div>
-			<form method = 'GET' action = "{{ url_for('contact_page')}}" >
+			<form method = 'POST' action = "{{ url_for('sent_page')}}" >
 			<span id = "entername">
 			please enter your name :
 			</span>
-			<input type = "Name" value "name" id = "namebox" placeholder = "First and Last" >
+			<input type = "Name" value="name" name="name" id = "namebox" placeholder = "First and Last" >
 			<span id = "enteremail">
 			please enter your email :
 			</span>
-			<input type = "email" value "email" id = "emailbox" placeholder = "youremail@example.com" >
+			<input type = "email" value="email" name="email" id = "emailbox" placeholder = "youremail@example.com" >
 			<span id = "entermsg">
 			please write your message here :
 			</span>
-			<TEXTAREA Name="content" ROWS=6 COLS=40 id = "msgbox" placeholder = "Enter Your Message Here">
+			<TEXTAREA Name="content" ROWS=6 COLS=40 name="message" id = "msgbox" placeholder = "Enter Your Message Here">
 			</TEXTAREA>
 			<input type = "submit" value = "Send" class = "button">
 			</form>
