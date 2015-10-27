@@ -4,7 +4,7 @@
 }
 
 
-#liner{
+.liner{
     color: #bdbdbd;
     font-size:100px;
     font-style: italic;
@@ -84,6 +84,8 @@ body{
    	 top: 600px;
    	 color:#c04d4d;
 	font-size:25px;
+   height:200px;
+     width:380px;
 }
 
 #entername{
@@ -139,7 +141,7 @@ body{
 	float: right;
     position: fixed;
     top: 50px;
-    right: 10px;
+    right: 0px;
 
 }
 

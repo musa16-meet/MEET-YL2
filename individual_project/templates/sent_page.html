@@ -4,7 +4,7 @@
 		<link rel="icon" href="{{ url_for('static', filename='me_logo.png') }}" type="image/gif">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>
-			Sent
+			Contact Me
 		</title>
 	</head>
 	<body>
@@ -12,7 +12,7 @@
 		<a href = "{{ url_for('main_page')}}">
 		<img class= "logo" src = "{{ url_for('static', filename='me_logo.png') }}" alt="the websit's logo" height="225" width="225"> </a>
 	  </div>
-		<div id="liner">
+		<div class="liner">
 			"Me, MySelf And I" 
 		</div>
 		<ul>
@@ -20,11 +20,15 @@
 			<li><a href="{{ url_for('hobbies_page')}}" id = "hobbies">Hobbies</a></li>
 			<li><a href="{{ url_for('education_page')}}" id = "education">Education</a></li> 
 			<li><a href="{{ url_for('contact_page')}}" id = "contact">Contact Me</a></li>
-		</ul>
+		</ul> 
 
-			<div class = "intro">
-			<p>
-				The message has been sent,<br>
+			<div class= "intro">
+				<p>
+					Your message has been sent,
+					Thank you for your message,
+				    If you have wrote your email adress I will reply soon.
+				</p>
+			</div>
 		</div>
 
 		<div id = "socialbuttons">

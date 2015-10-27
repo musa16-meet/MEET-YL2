@@ -12,14 +12,14 @@
 		<a href = "{{ url_for('main_page')}}">
 		<img class= "logo" src = "{{ url_for('static', filename='me_logo.png') }}" alt="the websit's logo" height="225" width="225"> </a>
 	    </div>
-		<div id="liner">
+		<div class="liner">
 			"Me, MySelf And I" 
 		</div>
 		<ul>
 			<li><a href="{{ url_for('bio_page')}}">About Me</a></li>
-			<li><a href="{{ url_for('hobbies_page')}}" id = "hobbies">Hobbies</a></li>
-			<li><a href="{{ url_for('education_page')}}" id = "education">Education</a></li> 
-			<li><a href="{{ url_for('contact_page')}}" id = "contact">Contact Me</a></li>
+			<li><a href="{{ url_for('hobbies_page')}}">Hobbies</a></li>
+			<li><a href="{{ url_for('education_page')}}">Education</a></li> 
+			<li><a href="{{ url_for('contact_page')}}">Contact Me</a></li>
 		</ul>
 
 			<div class = "intro">

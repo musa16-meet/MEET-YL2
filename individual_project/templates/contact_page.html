@@ -12,7 +12,7 @@
 		<a href = "{{ url_for('main_page')}}">
 		<img class= "logo" src = "{{ url_for('static', filename='me_logo.png') }}" alt="the websit's logo" height="225" width="225"> </a>
 	  </div>
-		<div id="liner">
+		<div class="liner">
 			"Me, MySelf And I" 
 		</div>
 		<ul>
@@ -31,17 +31,16 @@
 			<span id = "entername">
 			please enter your name :
 			</span>
-			<input type = "Name" value="name" name="name" id = "namebox" placeholder = "First and Last" >
+			<input type = "name" name="name" id = "namebox" placeholder = "First and Last" >
 			<span id = "enteremail">
 			please enter your email :
 			</span>
-			<input type = "email" value="email" name="email" id = "emailbox" placeholder = "youremail@example.com" >
+			<input type = "email" name="email" id = "emailbox" placeholder = "youremail@example.com" >
 			<span id = "entermsg">
 			please write your message here :
 			</span>
-			<TEXTAREA Name="content" ROWS=6 COLS=40 name="message" id = "msgbox" placeholder = "Enter Your Message Here">
-			</TEXTAREA>
-			<input type = "submit" value = "Send" class = "button">
+			<input type = "textarea" name="messege" id = "msgbox" placeholder = "please write your message here">
+			<input type = "submit" value = "send" class = "button">
 			</form>
 
 
