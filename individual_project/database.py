@@ -9,6 +9,6 @@ Base = declarative_base()
 class Contact (Base):
 	__tablename__ = 'Contact'
 	id = Column(Integer, primary_key=True)
-	name = Column(String(100))
-	email = Column(String(100))
-	messege = Column(String(500))
+	name = Column(String(60))
+	email = Column(String(60))
+	messege = Column(String(200))
